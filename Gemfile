@@ -15,11 +15,14 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'guard' # NOTE: this is necessary in newer versions
+  gem 'guard-minitest'
 end 
 
 group :test do
   gem 'minitest-reporters' 
   gem 'mini_backtrace' 
+  gem 'guard'
   gem 'guard-minitest' 
 end
 
@@ -27,3 +30,4 @@ group :production do
   gem 'pg' 
   gem 'rails_12factor' 
 end
+ 
