@@ -3,10 +3,10 @@ require 'test_helper'
 class UserLoginTest < ActionDispatch::IntegrationTest
   
   def setup
-  	@user = users(:sasi)
+  	@user = users(:example)
   end
 
-  test "login with invalid information" do 
+  test 'login with invalid information' do 
   	get login_path
   	assert_template 'sessions/new'
   	post login_path, session: { email: "", password: "" }
