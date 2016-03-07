@@ -14,6 +14,9 @@ gem 'faker'
 gem 'will_paginate' 
 gem 'bootstrap-will_paginate'
 gem 'figaro'
+gem 'carrierwave',             '0.10.0'
+gem 'mini_magick',             '3.8.0'
+gem 'fog',                     '1.36.0'
 
 group :development, :test do
   gem 'sqlite3'
