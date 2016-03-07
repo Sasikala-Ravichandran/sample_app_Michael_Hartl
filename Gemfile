@@ -12,7 +12,8 @@ gem 'bootstrap-sass'
 gem 'bcrypt'
 gem 'faker'
 gem 'will_paginate' 
-gem 'bootstrap-will_paginate' 
+gem 'bootstrap-will_paginate'
+gem 'figaro'
 
 group :development, :test do
   gem 'sqlite3'
